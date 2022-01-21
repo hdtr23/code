@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Đăng ký sân</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="/stylesheets/matches.css">
+    </head>
+
+    <body>
+        <!-- slider -->
+    
+        <div class="slideshow">
+            <div class="slides">
+                <input type="radio" name = "bottom" id="bottom1" checked>
+                <input type="radio" name = "bottom" id="bottom2" >
+                <input type="radio" name = "bottom" id="bottom3" >
+                <input type="radio" name = "bottom" id="bottom4" >
+                
+                <img src="/images/emirates_sta.jpg" alt="bottom1" class="s1">
+                <img src="/images/emirates_sta1.jpg" alt="bottom2" class="s2">
+                <img src="/images/emirates_sta2.jpg" alt="bottom3" class="s3">
+                <img src="/images/R.jpg" alt="bottom4" class="s4">
+            </div>
+
+            <div class="navigation">
+                <label for="bottom1" class="bar"></label>
+                <label for="bottom2" class="bar"></label>
+                <label for="bottom3" class="bar"></label>
+                <label for="bottom4" class="bar"></label>
+            </div>
+        </div>
+
+        <!-- form san -->
+        <div class="form_san">
+            <h1>Đăng ký sân Emirates</h1>
+            <div class="teams">
+                <div class="team1">
+                    <input type="text" class="team1-input" placeholder=" ">
+                    <label for="" class="team1-label">Tên đội</label>
+                </div>
+                <h3 class="vs">vs.</h3>
+                <div class="team2">
+                    <input type="text" class="team2-input" placeholder=" ">
+                    <label for="" class="team2-label">Tên đội</label>
+                </div>
+            </div>
+            
+            <div class="phone">
+                <input type="tel" class="phone-input" placeholder=" ">
+                <label for="" class="phone-label">Số điện thoại</label>
+            </div>
+            <div class="date">
+                <input type="date" class="date-input" placeholder=" ">
+                <label for="" class="date-label">Ngày/Tháng/Năm</label>
+            </div>  
+            <div class="time">
+                <select class="time-select">
+                    <option value="1">17h-18h30</option>
+                    <option value="2">18h30-20h</option>
+                    <option value="3">20h-21h30</option>
+                    <option value="4">21h30-23h</option>
+                </select>
+                <label for="" class="time-label">Thời gian</label>
+            </div>  <br><br>
+            <div class="checkbox">
+                <input type="checkbox" class="checkbox-check">
+                <span class="check">Bạn chắc chắn thông tin trên là chính xác?</span><br>
+            </div>
+            <br>
+            <input type="submit" class="submit" value="Đăng ký">
+        </div>
+
+    </body>
+</html>

@@ -1,0 +1,308 @@
+@charset "UTF-8";
+.slideshow {
+  width: 38%;
+  overflow: hidden;
+  margin-top: 160px;
+  margin-left: 100px;
+}
+
+.slides {
+  display: flex;
+}
+
+.slides img {
+  width: 100%;
+}
+
+.navigation {
+  display: flex;
+  justify-content: center;
+}
+
+.slideshow input {
+  display: none;
+}
+
+.bar {
+  background-color: green;
+  border: 2px solid green;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  margin: 2px;
+}
+
+.bar:hover {
+  background-color: white;
+}
+
+#bottom1:checked ~ .s1 {
+  margin-left: -100%;
+}
+
+#bottom2:checked ~ .s2 {
+  margin-left: -200%;
+}
+
+#bottom3:checked ~ .s3 {
+  margin-left: -300%;
+}
+
+#bottom4:checked ~ .s4 {
+  margin-left: -400%;
+}
+
+body {
+  display: flex;
+  background: linear-gradient(#51e951, #0aec0a);
+  /* background-image: url('/images/sanbong1\ -\ Copy.jpg');
+  background-size: cover; */
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.form_san {
+  margin-top: 50px;
+  margin-left: 100px;
+  padding: 10px;
+  background-color: white;
+  border-radius: 10px solid white;
+}
+
+h1 {
+  text-align: center;
+}
+
+/* .forminput{
+    padding: 20px;
+    border-radius: 4px;
+    width: 30%;
+    height: 50px;
+    padding: 0 20px;
+    transition: 0.25 ease;
+}
+.forminput:focus{
+    border-color: green;
+}
+.testfocus{
+    position: relative;
+}
+.formlabel{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 20px;
+    user-select: none;
+    color: #999;
+    transition: 0.25s ease;
+}
+.forminput:not(:placeholder-shown) + .formlabel,
+.forminput:focus + .formlabel{
+    top: 0;
+    padding: 6px;
+    background-color: white;
+    display: inline-block;
+    color: green;
+} */
+/* css tên đội 1 */
+.team1-input {
+  padding: 20px;
+  border-radius: 4px;
+  width: 200px;
+  height: 50px;
+  padding: 0 20px;
+  transition: 0.25 ease;
+}
+
+.team1-input:focus {
+  border-color: green;
+}
+
+.team1 {
+  position: relative;
+  padding: 20px 0;
+}
+
+.team1-label {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 20px;
+  user-select: none;
+  color: #999;
+  transition: 0.25s ease;
+}
+
+.team1-input:not(:placeholder-shown) + .team1-label,
+.team1-input:focus + .team1-label {
+  top: 20px;
+  padding: 6px;
+  background-color: white;
+  display: inline-block;
+  color: green;
+}
+/* css tên đội 2 */
+.team2-input {
+  padding: 20px;
+  border-radius: 4px;
+  width: 200px;
+  height: 50px;
+  padding: 0 20px;
+  margin-left: 30px;
+  transition: 0.25 ease;
+}
+
+.team2-input:focus {
+  border-color: green;
+}
+
+.team2 {
+  position: relative;
+  padding: 20px 0;
+}
+
+.team2-label {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 50px;
+  user-select: none;
+  color: #999;
+  transition: 0.25s ease;
+}
+
+.team2-input:not(:placeholder-shown) + .fc2label,
+.team2-input:focus + .team2-label {
+  top: 20px;
+  padding: 6px;
+  background-color: white;
+  display: inline-block;
+  color: green;
+}
+
+/* đặt 2 đội trên 1 hàng */
+.teams {
+  display: flex;
+}
+
+h3 {
+  padding-left: 20px;
+  padding-top: 20px;
+}
+
+/* css số điện thoại */
+.phone-input {
+  padding: 20px;
+  border-radius: 4px;
+  width: 200px;
+  height: 50px;
+  padding: 0 20px;
+  margin-left: 160px;
+  transition: 0.25 ease;
+}
+
+.phone-input:focus {
+  border-color: green;
+}
+
+.phone {
+  position: relative;
+  padding: 20px 0;
+}
+
+.phone-label {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 180px;
+  user-select: none;
+  color: #999;
+  transition: 0.25s ease;
+}
+
+.phone-input:not(:placeholder-shown) + .phone-label,
+.phone-input:focus + .phone-label {
+  top: 20px;
+  padding: 6px;
+  background-color: white;
+  display: inline-block;
+  /* color: green; */
+}
+
+/* css date */
+.date-input {
+  padding: 20px;
+  border-radius: 4px;
+  width: 200px;
+  height: 50px;
+  padding: 0 20px;
+  margin-left: 160px;
+  transition: 0.25 ease;
+}
+
+.date:focus {
+  border-color: green;
+}
+
+.date {
+  position: relative;
+  padding: 20px 0;
+}
+
+.date-label {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 180px;
+  user-select: none;
+  color: #999;
+  top: 20px;
+  background-color: white;
+  padding: 6px;
+}
+
+/* css time */
+.time-select {
+  padding: 20px;
+  border-radius: 4px;
+  width: 245px;
+  height: 50px;
+  padding: 0 20px;
+  margin-left: 160px;
+  transition: 0.25 ease;
+}
+
+.time-select:focus {
+  border-color: green;
+}
+
+/* .time-label{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 180px;
+    user-select: none;
+    color: #999;
+    top:20px;
+    background-color: white;
+    padding: 6px;
+} */
+option {
+  font-size: 15px;
+}
+
+select {
+  font-size: 15px;
+}
+
+.checkbox {
+  padding-left: 130px;
+}
+
+.submit {
+  margin-left: 40%;
+  padding: 13px 26px;
+  font-size: 20px;
+}
+
+/*# sourceMappingURL=style.css.map */
